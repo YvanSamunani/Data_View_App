@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-<<<<<<< HEAD
 
 class dataTable extends StatelessWidget {
   @override
@@ -56,39 +55,5 @@ class dataTable extends StatelessWidget {
         )
       ],
     ))));
-=======
-void main() => runApp(Data_Table());
-
-class Data_Table extends StatelessWidget {
-  Widget build(BuildContext inContext) {
-    return MaterialApp(
-      home : Scaffold(
-        body : Column(
-          children : [
-            Container(height : 100),
-            DataTable(
-              sortColumnIndex : 1,
-              columns : [
-                DataColumn(label : Text("First Name")),
-                DataColumn(label : Text("Last Name"))
-              ],
-              rows : [
-                DataRow(cells : [
-                  DataCell(Text("Leia")),
-                  DataCell(Text("Organa"), showEditIcon : true)
-                  ]),
-                DataRow(cells : [
-                  DataCell(Text("Luke")),
-                  DataCell(Text("Skywalker"))
-                ]),
-
-                DataRow(cells : [
-                  DataCell(Text("Han")),
-                  DataCell(Text("Solo"))
-                ])
-            ])
-        ])
-      ));
->>>>>>> b2bfa8783bc1a99f15e2cdf91d593a07764d7e1d
   }
 }
